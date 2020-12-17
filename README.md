@@ -5,6 +5,10 @@ From acloudguru EKS 101
 Create an IAM role - k8
 And assign it an Admin Policy
 
+Add the keys + regios to your aws cli
+
+'#' aws configure --profile k8
+
 Install aws cli + eksctl from here
 
 https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
@@ -21,7 +25,7 @@ eksctl get cluster --profile k8
 aws eks update-kubeconfig --name dev-cluster --region us-east-1 --profile k8
 
 
-# create the service (will give you the load blancer address
+# create the service (will give you the load balancer address
 kubectl apply -f ./nginx-svc.yam
 # create the worker EC2s
 kubectl apply -f ./nginx-deployment.yaml

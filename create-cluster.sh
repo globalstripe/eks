@@ -1,13 +1,4 @@
-# AWS ESK Demo 
-
-Create an IAM role - k8
-And assign it an Admin Policy
-
-Install aws cli + eksctl from here
-
-https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
-
-eksctl create cluster --name dev-cluster --version 1.16 --region us-east-1 --nodegroup-name standard-workers  --node-type t3.micro --nodes 3 --nodes-min 1 --nodes-max 4 --managed --profile k8
+ eksctl create cluster --name dev-cluster --version 1.16 --region us-east-1 --nodegroup-name standard-workers  --node-type t3.micro --nodes 3 --nodes-min 1 --nodes-max 4 --managed --profile k8
 
 eksctl get cluster --profile k8
 

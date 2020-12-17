@@ -9,6 +9,11 @@ Add the keys + regios to your aws cli
 
 '#' aws configure --profile k8
 
+AWS Access Key ID [******************]: 
+AWS Secret Access Key [******************]: 
+Default region name [us-east-1]: 
+Default output format [None]:
+
 Install aws cli + eksctl from here
 
 https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html

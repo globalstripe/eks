@@ -4,9 +4,6 @@ eksctl get cluster --profile k8
 
 aws eks update-kubeconfig --name dev-cluster --region us-east-1 --profile k8
 
-
-cd Course_EKS-Basics
-
 # create the service (will give you the load blancer address
 kubectl apply -f ./nginx-svc.yam
 # create the worker EC2s
